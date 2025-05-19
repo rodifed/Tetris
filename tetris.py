@@ -194,8 +194,8 @@ class Board(QFrame):
             self.game_over()
 
     def drawSquare(self, painter, x, y, shape):
-        colorTable = [0x000000, 0xCC6666, 0x66CC66, 0x6666CC,
-                      0xCCCC66, 0xCC66CC, 0x66CCCC, 0xDAAA00]
+        colorTable = [0xAE7435, 0xCC4387, 0xDF6748, 0x7653FD,
+                      0x5467CF, 0x000888, 0x007007, 0xDA7834]
         color = QColor(colorTable[shape])
         painter.fillRect(x + 1, y + 1, self.squareWidth() - 2,
                          self.squareHeight() - 2, color)
